@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  display: grid;
+  grid-template-rows: 50vh 1fr;
+  grid-template-areas: "head" "main";
+  background-color: black;
+}
+
+header {
+  grid-area: head;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  max-width: 100vw;
+}
+
+h3 {
+  margin: 0.5rem;
+}
+#box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  background-color: #9c8985;
+  border-radius: 5%;
+}
+#box button {
+  margin-top: 2vh;
+  height: 5vh;
+  width: 20vw;
+  border-radius: 2%;
+  background-color: skyblue;
+}
+#box p {
+  margin: 0.5rem;
+}
+#cantidad-convertir {
+  height: 5vh;
+  width: 20vw;
+  border-radius: 2%;
+  text-align: center;
+}
+#monedas {
+  height: 5vh;
+  width: 20vw;
+  border-radius: 2%;
+  text-align: center;
+}
+#resultado {
+  text-align: left;
+}
